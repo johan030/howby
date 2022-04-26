@@ -11,11 +11,11 @@ const Header = () => {
       
     </View>
     
-    <Pressable>Favori</Pressable>
+    
     <Pressable>
         <Text Style={{backgroundColor: 'black'}}>Partager</Text>
       </Pressable>
-    <Pressable>Appeler</Pressable>
+    
     </>
     
   )
