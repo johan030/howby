@@ -32,6 +32,12 @@ const Header = () => {
           style = {styles.icon}/>
           </TouchableOpacity>
         </View>
+
+        <Image
+        style={styles.image}
+        source={{
+          uri: 'https://images.unsplash.com/photo-1508181441164-3c8e9bd4575a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80',
+        }}/>
       </View>
     </>
   );
@@ -52,6 +58,7 @@ const styles = StyleSheet.create({
     color: "white", //fonctionne pas
     borderRadius: ".5rem",
     marginRight: "1rem",
+    padding: '5px,10px,5px,10px'
   },
   ButtonBlue: {
     backgroundColor: "#000D4E",
@@ -64,5 +71,11 @@ const styles = StyleSheet.create({
     marginLeft: 10,
     resizeMode: "contain",
   },
+  image:{
+    marginTop: '1rem',
+    width: '300px',
+    height: '400px',
+    
+  }
 });
 export default Header;
