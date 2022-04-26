@@ -12,8 +12,8 @@ const MiddleComponent = () => {
           style={styles.icon}
         />
       </TouchableOpacity>
-          <Text style={{color: 'red'}}>Sortir <br />maintenant</Text>
-          <Text style={{color: 'red'}}>Organiser</Text>
+          <Text style={styles.text}>Sortir <br />maintenant</Text>
+          <Text style={styles.text}>Organiser</Text>
           
           <Image source={{uri: "https://img.icons8.com/ios/50/000000/picture.png"}} style={styles.icon} />
     </View>
@@ -31,6 +31,10 @@ const styles = StyleSheet.create({
   icon: {
     width: '30px',
     height: '30px'
+  },
+  text:{
+    fontSize:'.7rem',
+    color: 'red'
   }
 })
 
