@@ -1,7 +1,7 @@
 import { View, Text, SafeAreaView, StyleSheet } from 'react-native'
 import React from 'react'
 import Header  from '../components/home/Header'
-import Image from '../components/home/Image'
+//import Image from '../components/home/Image'
 
 
 
@@ -9,7 +9,7 @@ const HomeScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
       <Header />
-      <Image />
+    
       
     </SafeAreaView>
   )
