@@ -3,6 +3,7 @@ import React from 'react'
 import Header from '../components/secondPage/Header';
 import Introduction from '../components/secondPage/Introduction'
 import ImageSlider from '../components/secondPage/ImageSlider'
+import Emplacements from '../components/secondPage/Emplacements';
 
 const SecondPage = () => {
     return (
@@ -10,6 +11,7 @@ const SecondPage = () => {
           <Header /> 
           <Introduction />
           <ImageSlider />
+          <Emplacements />
         </SafeAreaView>
       )
 }
