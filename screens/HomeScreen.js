@@ -4,6 +4,7 @@ import Header  from '../components/home/Header';
 //import Image from '../components/home/Image'
 import MiddleComponent from '../components/home/MiddleComponent';
 import Services from '../components/home/Services';
+import ProgressBar from '../components/home/ProgressBar';
 
 
 
@@ -13,6 +14,7 @@ const HomeScreen = () => {
       <Header /> 
       <MiddleComponent />
       <Services />
+      <ProgressBar />
     </SafeAreaView>
   )
 }
