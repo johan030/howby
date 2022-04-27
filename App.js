@@ -3,10 +3,11 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import HomeScreen from './screens/HomeScreen';
 import SecondPage from './screens/SecondPage'
+import ThirdPage from './screens/ThirdPage';
 
 export default function App() {
   return (
-    <SecondPage />
+    <ThirdPage />
   )
 }
 
