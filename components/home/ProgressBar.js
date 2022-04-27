@@ -1,4 +1,4 @@
-import { View, Text } from 'react-native'
+import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
 import ProgressBar from 'react-native-animated-progress'
 
@@ -7,7 +7,10 @@ const Bar = () => {
        
          <>
           <View>
-            <Text style={{ marginBottom: 5 }}>Ressenti sur Howby</Text>
+              <View style={styles.wrapper}>
+            <Text>Ressenti sur Howby</Text>
+            <Text>94% favorable</Text>
+            </View>
             <ProgressBar
               progress={94}
               height={7}
@@ -18,5 +21,14 @@ const Bar = () => {
         </>
       );
 }
-
+const styles = StyleSheet.create({
+    wrapper: {
+        
+        marginTop: '10px',
+        marginLeft: '1rem',
+        marginRight: '1rem',
+        flexDirection: 'row',
+        justifyContent: 'space-between'
+    }
+})
 export default Bar
