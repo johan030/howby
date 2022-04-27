@@ -2,12 +2,14 @@ import { View, Text, StyleSheet, SafeAreaView } from 'react-native'
 import React from 'react'
 import Header from '../components/secondPage/Header';
 import Introduction from '../components/secondPage/Introduction'
+import ImageSlider from '../components/secondPage/ImageSlider'
 
 const SecondPage = () => {
     return (
         <SafeAreaView style={styles.container}>
           <Header /> 
           <Introduction />
+          <ImageSlider />
         </SafeAreaView>
       )
 }
