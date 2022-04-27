@@ -4,6 +4,7 @@ import Header from '../components/secondPage/Header';
 import Introduction from '../components/secondPage/Introduction'
 import ImageSlider from '../components/secondPage/ImageSlider'
 import Emplacements from '../components/secondPage/Emplacements';
+import BottomIntroduction from '../components/secondPage/BottomIntroduction';
 
 const SecondPage = () => {
     return (
@@ -12,6 +13,7 @@ const SecondPage = () => {
           <Introduction />
           <ImageSlider />
           <Emplacements />
+          <BottomIntroduction />
         </SafeAreaView>
       )
 }
