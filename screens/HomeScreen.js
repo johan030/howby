@@ -24,6 +24,7 @@ const HomeScreen = () => {
 const styles = StyleSheet.create ({
   container: {
     backgroundColor: '##F0F0DF',
+    marginTop: '1rem',
     flex: 1,
   }
 })
