@@ -3,6 +3,7 @@ import React from 'react'
 import HickingInformation from '../components/thirdPage/HickingInformation';
 import Prices from '../components/thirdPage/Prices';
 import Hours from '../components/thirdPage/Hours';
+import Rating from '../components/thirdPage/Rating';
 
 const ThirdPage = () => {
   return (
@@ -11,6 +12,7 @@ const ThirdPage = () => {
       <HickingInformation />
       <Prices />
       <Hours />
+      <Rating />
     </View>
     </>
   )
