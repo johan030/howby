@@ -1,43 +1,60 @@
-import React, { useState } from "react";
-import { CheckBox, Text, StyleSheet, View } from "react-native";
+import React, { useEffect, useState } from "react";
+import { Text, StyleSheet, View } from "react-native";
 //import BouncyCheckbox from "react-native-bouncy-checkbox";
+//import CheckBox from '@react-native-community/checkbox';
+import { CheckBox } from "react-native-elements";
+
 
 
 const CheckBoxes = () => {
-    const [isSelected, setSelection] = useState(false);
-
     return (
-        <View style={StyleSheet.container}>
-            <View style={StyleSheet.checkboxContainer}>
-                <CheckBox
-                    Value={isSelected}
-                    onValueChange={setSelection}
-                    style={StyleSheet.checkbox}
-                />
+        <View>
+            <CheckBox
+                title="Elle est inexacte ou incorrect"
+                checked={true}
+                checkedColor="blue"
+                checkedIcon='dot-circle-o'
+                uncheckedIcon='circle-o'
 
-                <Text style={styles.label}>Elle est inexacte ou incorrecte</Text>
-            </View>
-            <Text>Is CheckBox selected: {isSelected ? "👍" : "👎"}</Text>
+            />
+            <CheckBox
+                title="Ce n'est pa un véritable itinéraire"
+                checked={false}
+                checkedColor="blue"
+                checkedIcon='dot-circle-o'
+                uncheckedIcon='circle-o'
+
+            />
+            <CheckBox
+                title="c'est une arnaque"
+                checked={false}
+                checkedColor="blue"
+                checkedIcon='dot-circle-o'
+                uncheckedIcon='circle-o'
+
+            />
+            <CheckBox
+                title="Il s'agit d'autre chose"
+                checked={false}
+                checkedColor="blue"
+                checkedIcon='dot-circle-o'
+                uncheckedIcon='circle-o'
+
+            />
+            <CheckBox
+                title="Le contenu est choquant"
+                checked={false}
+                checkedColor="blue"
+                checkedIcon='dot-circle-o'
+                uncheckedIcon='circle-o'
+
+            />
         </View>
+
     )
+
 }
 
-const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      alignItems: "center",
-      justifyContent: "center",
-    },
-    checkboxContainer: {
-      flexDirection: "row",
-      marginBottom: 20,
-    },
-    checkbox: {
-      alignSelf: "center",
-    },
-    label: {
-      margin: 8,
-    },
-  });
+
 
 export default CheckBoxes;
