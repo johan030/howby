@@ -4,6 +4,7 @@ import HickingInformation from '../components/thirdPage/HickingInformation';
 import Prices from '../components/thirdPage/Prices';
 import Hours from '../components/thirdPage/Hours';
 import Rating from '../components/thirdPage/Rating';
+import ComplementInformation from '../components/thirdPage/ComplementInformation';
 
 const ThirdPage = () => {
   return (
@@ -13,6 +14,7 @@ const ThirdPage = () => {
       <Prices />
       <Hours />
       <Rating />
+      <ComplementInformation />
     </View>
     </>
   )
