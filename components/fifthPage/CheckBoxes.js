@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Text, StyleSheet, View } from "react-native";
+import { Text, StyleSheet, View, Pressable } from "react-native";
 //import BouncyCheckbox from "react-native-bouncy-checkbox";
 //import CheckBox from '@react-native-community/checkbox';
 import { CheckBox } from "react-native-elements";
@@ -8,6 +8,13 @@ import { CheckBox } from "react-native-elements";
 
 const CheckBoxes = () => {
     return (
+        <>
+        <View>
+            <Pressable style={{marginBottom: '1rem'}}>
+                <Text>Retour</Text>
+            </Pressable>
+            <Text style={styles.question}>Pourquoi signalez vous cette annonce ? </Text>
+        </View>
         <View>
             <CheckBox
                 title="Elle est inexacte ou incorrect"
@@ -50,11 +57,30 @@ const CheckBoxes = () => {
 
             />
         </View>
-
+        <View style={styles.pressable}>
+            <Pressable>
+                <Text>Suivant</Text>
+            </Pressable>
+        </View>
+        </>
     )
 
 }
 
-
+const styles = StyleSheet.create({
+    pressable:{
+        width: '100%',
+        marginTop: '10rem',
+        textAlign:'center',
+        borderColor: 'blue',
+        borderWidth: 2,
+        padding: '.5rem',
+        borderRadius: '10px'
+    },
+    question:{
+        fontSize: '1.5rem',
+        marginBottom: '2rem'
+    }
+})
 
 export default CheckBoxes;
