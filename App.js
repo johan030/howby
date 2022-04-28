@@ -5,11 +5,12 @@ import HomeScreen from './screens/HomeScreen';
 import SecondPage from './screens/SecondPage'
 import ThirdPage from './screens/ThirdPage';
 import FourthPage from './screens/FourthPage';
+import FifthPage from './screens/FifthPage';
 
 
 export default function App() {
   return (
-    <FourthPage />
+    <FifthPage />
   )
 }
 
