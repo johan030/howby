@@ -13,26 +13,17 @@ const HickingInformation = () => {
           style={styles.icon}
         />
       </View>
-      <View style={styles.wrapper}>
-        
-          <View>
-            <Text>Distance du parcous</Text>
-            <Text>1,2 Km</Text>
-          </View>
-        
-        
-          <View>
-            <Text>Dénivelé</Text>
-            <Text>+ 350 m</Text>
-          </View>
-        
-        
-          <View>
-            <Text>Durée du parcous</Text>
-            <Text>1:30</Text>
-          </View>
-        
+      <View style={styles.text}>
+          <Text>Distance du <br /> parcours</Text>
+          <Text>Dénivelé</Text>
+          <Text>Durée du <br /> parcours</Text>
       </View>
+      <View style={styles.text}>
+          <Text style={styles.content}>1,2Km</Text>
+          <Text style={styles.content}> + 350</Text>
+          <Text style={styles.content}>1:30</Text>
+      </View>
+
     </>
   );
 };
@@ -43,16 +34,25 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     borderBottomColor: "gray",
     borderBottomWidth: 2,
-    marginBottom: 10,
+    marginBottom: 20,
   },
-  wrapper: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-  },
-
   icon: {
     width: "30px",
     height: "30px",
   },
+  text:{
+      flexDirection: 'row',
+      justifyContent: 'space-around',
+      alignItems: 'center',
+      marginBottom: '20px'
+  },
+  content:{
+      padding: '.8rem',
+      backgroundColor: '#FAF7F4',
+      borderRadius: '10px',
+      fontSize:  '1rem',
+      letterSpacing: '2px'
+  }
+
 });
 export default HickingInformation;
