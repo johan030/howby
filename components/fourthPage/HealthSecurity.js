@@ -1,7 +1,7 @@
-import { View, Text, Image, StyleSheet } from 'react-native'
+import { View, Text, Image, StyleSheet, Pressable } from 'react-native'
 import React from 'react'
 
-const ComplementInformation = () => {
+const HealthSecurity = () => {
     return(
     <>
         <View style={styles.wrapper}>
@@ -13,12 +13,13 @@ const ComplementInformation = () => {
                 style={styles.icon}
             />
         </View>
-
         <View>
-            <Text>Appartient à</Text>
-            <Text>A comme clientèle cible</Text>
-            <Text>Langue disponible</Text>
+            Mesure sanitaire du covid - 19
         </View>
+        <View style={styles.signaler}>
+            <Pressable style={{paddingTop: '2rem'}}>Signaler cette annonce</Pressable>
+        </View>
+
 
     </>
     );
@@ -38,10 +39,15 @@ const styles = StyleSheet.create({
     icon: {
         width: '24px',
         height: '24px',
-        marginTop: '-10px'
+        marginTop: '-10px',
     },
+
+    signaler:{
+        marginTop: '20px',
+        borderTopColor: 'gray',
+        borderTopWidth: 2
+    }
 
 })
 
-
-export default ComplementInformation;
+export default HealthSecurity;
