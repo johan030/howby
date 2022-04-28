@@ -39,6 +39,8 @@ const styles = StyleSheet.create({
   icon: {
     width: "30px",
     height: "30px",
+    marginTop: '-10px'
+    
   },
   text:{
       flexDirection: 'row',
