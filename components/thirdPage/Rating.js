@@ -4,7 +4,7 @@ import React from 'react'
 const Rating = () => {
     return(
     <>
-        <View style={styles.wrapper}>
+        <View style={styles.ratting}>
             <Text style={{ color: "red" }}>Classement</Text>
             <Image
                 source={{
@@ -21,7 +21,7 @@ const Rating = () => {
 
 
 const styles = StyleSheet.create({
-    wrapper: {
+    rating: {
         marginTop: '20px',
         flexDirection: 'row',
         justifyContent: 'space-between',

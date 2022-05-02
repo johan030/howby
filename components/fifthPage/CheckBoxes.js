@@ -69,7 +69,7 @@ const CheckBoxes = () => {
 
 const styles = StyleSheet.create({
     pressable:{
-        width: '100%',
+         
         marginTop: '10rem',
         textAlign:'center',
         borderColor: 'blue',

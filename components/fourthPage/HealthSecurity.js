@@ -4,7 +4,7 @@ import React from "react";
 const HealthSecurity = () => {
   return (
     <>
-      <View style={styles.wrapper}>
+      <View style={styles.healthsecurity}>
         <Text style={{ color: "red" }}>Informations complémentaires</Text>
         <Image
           source={{
@@ -26,7 +26,7 @@ const HealthSecurity = () => {
 };
 
 const styles = StyleSheet.create({
-  wrapper: {
+  healthsecurity: {
     marginTop: "20px",
     flexDirection: "row",
     justifyContent: "space-between",

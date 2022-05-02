@@ -4,7 +4,7 @@ import React from 'react'
 const Header = () => {
   return (
     <View>
-        <View style={styles.headerWrapper}>
+        <View style={styles.page2Wrapper}>
       <Text style={{color: 'red'}}>Le sentier des gorges propose</Text>
       <Image source = {{ uri: 'https://img.icons8.com/ios/50/000000/book.png'}}
           style = {styles.icon}/>
@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
         height: '25px',
         marginTop: '-10px'
     },
-    headerWrapper:{
+    page2Wrapper:{
         borderBottomColor: 'gray',
         borderBottomWidth: 2,
         marginBottom: 20,

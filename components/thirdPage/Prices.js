@@ -4,7 +4,7 @@ import React from 'react'
 const Prices = () => {
   return (
       <>
-    <View style={styles.wrapper}>
+    <View style={styles.prices}>
       <Text style = {{color: 'red'}}>Tarifs</Text>
       <Image source= {{uri: 'https://img.icons8.com/material-two-tone/24/000000/euro-pound-exchange.png'}} style={styles.icon} />
     </View>
@@ -27,7 +27,7 @@ const Prices = () => {
 
 
 const styles = StyleSheet.create ({
-    wrapper: {
+    prices: {
         marginTop: '20px',
         flexDirection: 'row',
         justifyContent: 'space-between',

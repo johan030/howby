@@ -4,7 +4,7 @@ import React from 'react'
 const Emplacements = () => {
   return (
       <>
-    <View style={styles.wrapper}>
+    <View style={styles.emplacement}>
       <Text style={{color: 'red'}}>Emplacements</Text>
       <Image source = {{ uri: 'https://img.icons8.com/ios/50/000000/place-marker--v1.png'}}
           style = {styles.icon}/>   
@@ -18,7 +18,7 @@ const Emplacements = () => {
 }
 
 const styles = StyleSheet.create ({
-    wrapper: {
+    emplacement: {
         marginTop: '20px',
         flexDirection: 'row',
         justifyContent: 'space-between',

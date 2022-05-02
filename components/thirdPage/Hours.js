@@ -4,7 +4,7 @@ import React from "react";
 const Hours = () => {
   return (
     <>
-      <View style={styles.wrapper}>
+      <View style={styles.hours}>
         <Text style={{ color: "red" }}>Horaires</Text>
         <Image
           source={{
@@ -24,7 +24,7 @@ const Hours = () => {
 
 
 const styles = StyleSheet.create ({
-    wrapper: {
+    hours: {
         marginTop: '20px',
         flexDirection: 'row',
         justifyContent: 'space-between',

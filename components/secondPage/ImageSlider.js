@@ -1,7 +1,6 @@
 import { View, Text } from 'react-native'
 import React from 'react'
-//import { SliderBox } from "react-native-image-slider-box";
-import { ImageSlider, ImageCarousel, Icon } from "react-native-image-slider-banner";
+import  {ImageSlider, ImageCarousel, Icon}  from "react-native-image-slider-banner";
 
 <ImageCarousel 
     data={[

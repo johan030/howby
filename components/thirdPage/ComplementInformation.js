@@ -4,7 +4,7 @@ import React from 'react'
 const ComplementInformation = () => {
     return(
     <>
-        <View style={styles.wrapper}>
+        <View style={styles.complementinfo}>
             <Text style={{ color: "red" }}>Informations complémentaires</Text>
             <Image
                 source={{
@@ -27,7 +27,7 @@ const ComplementInformation = () => {
 
 
 const styles = StyleSheet.create({
-    wrapper: {
+    complementinfo: {
         marginTop: '20px',
         flexDirection: 'row',
         justifyContent: 'space-between',

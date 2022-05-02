@@ -4,7 +4,7 @@ import React from "react";
 const HickingInformation = () => {
   return (
     <>
-      <View style={styles.wrap}>
+      <View style={styles.hickinginfo}>
         <Text style={{ color: "red" }}>Type de parcours</Text>
         <Image
           source={{
@@ -13,12 +13,12 @@ const HickingInformation = () => {
           style={styles.icon}
         />
       </View>
-      <View style={styles.text}>
+      <View style={styles.infos}>
           <Text>Distance du <br /> parcours</Text>
           <Text>Dénivelé</Text>
           <Text>Durée du <br /> parcours</Text>
       </View>
-      <View style={styles.text}>
+      <View style={styles.infos}>
           <Text style={styles.content}>1,2Km</Text>
           <Text style={styles.content}> + 350</Text>
           <Text style={styles.content}>1:30</Text>
@@ -29,7 +29,7 @@ const HickingInformation = () => {
 };
 
 const styles = StyleSheet.create({
-  wrap: {
+  hickinginfo: {
     flexDirection: "row",
     justifyContent: "space-between",
     borderBottomColor: "gray",
@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     marginTop: '-10px'
     
   },
-  text:{
+  infos:{
       flexDirection: 'row',
       justifyContent: 'space-around',
       alignItems: 'center',
